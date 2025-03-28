@@ -1,37 +1,37 @@
-/* Estilização Geral */
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(270deg, #1e90ff, #00bfff, #87cefa); /* Gradiente animado */
+    background: linear-gradient(270deg, #1e90ff, #00bfff, #87cefa); 
     background-size: 600% 600%;
     animation: gradientAnimation 10s ease infinite;
-    color: #333; /* Cor do texto padrão */
-    overflow: hidden; /* Evita scroll para animação do fundo */
+    color: #333;
+    overflow: hidden;
 }
 
-/* Animação do Fundo */
+
 @keyframes gradientAnimation {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
 
-/* Cabeçalho */
+
 header {
     text-align: center;
-    margin-bottom: 10px; /* Espaçamento reduzido abaixo da logo */
+    margin-bottom: 10px; 
     padding: 10px 0;
 }
 
 .logo {
-    width: 150px; /* Tamanho da logo */
+    width: 150px;
     height: auto;
 }
 
-/* Contêiner de Login e Redefinição */
+
 .container {
     background-color: #ffffff;
     padding: 30px;
@@ -39,17 +39,17 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     width: 360px;
-    display: none; /* Inicialmente escondido */
-    margin: 0 auto; /* Centraliza horizontalmente */
+    display: none; 
+    margin: 0 auto; 
 }
 
-/* Exibe o contêiner ativo */
+
 .container.active {
     display: block;
-    margin-top: -20px; /* Reduz espaço vertical entre a logo e o contêiner */
+    margin-top: -20px; 
 }
 
-/* Campos de Entrada */
+
 .container input {
     display: block;
     width: 100%;
@@ -66,7 +66,7 @@ header {
     outline: none;
 }
 
-/* Botões */
+
 .container button {
     width: 100%;
     padding: 12px 20px;
@@ -84,7 +84,7 @@ header {
     background-color: #145db2;
 }
 
-/* Links */
+
 .container a {
     margin-top: 10px;
     text-decoration: none;
@@ -96,14 +96,14 @@ header {
     text-decoration: underline;
 }
 
-/* Rodapé */
+
 footer {
-    position: fixed; /* Fixa o rodapé no fundo */
+    position: fixed; 
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto semitransparente */
-    color: #ffffff; /* Texto branco */
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: #ffffff;
     text-align: center;
     padding: 15px 0;
     font-size: 1rem;
