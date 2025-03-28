@@ -1,4 +1,4 @@
-/* Estilização Geral do Corpo */
+
 body {
     margin: 0;
     padding: 0;
@@ -6,66 +6,65 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: linear-gradient(270deg, #1e90ff, #00bfff, #87cefa); /* Gradiente azul animado */
+    background: linear-gradient(270deg, #1e90ff, #00bfff, #87cefa); 
     background-size: 600% 600%;
-    animation: animate-background 10s ease infinite; /* Animação do gradiente */
-    color: #333; /* Cor padrão do texto */
-    overflow: hidden; /* Evita barras de rolagem no fundo */
+    animation: animate-background 10s ease infinite; 
+    color: #333;
+    overflow: hidden; 
 }
 
-/* Animação do Fundo */
 @keyframes animate-background {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
 
-/* Estilo do Cabeçalho */
+
 header {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Espaço entre logo e botão */
+    justify-content: space-between;
     padding: 10px 20px;
-    z-index: 10; /* Acima do fundo animado */
+    z-index: 10; 
 }
 
 .logo {
-    height: 80px; /* Tamanho ajustado da logo */
+    height: 80px; 
     object-fit: contain;
 }
 
-/* Botão Voltar */
+
 .redirect-button {
     padding: 12px 25px;
-    background-color: #007bff; /* Azul vibrante */
+    background-color: #007bff; 
     color: #ffffff;
     font-size: 18px;
     font-weight: bold;
     border: none;
-    border-radius: 30px; /* Bordas arredondadas */
+    border-radius: 30px;
     cursor: pointer;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
 }
 
 .redirect-button:hover {
-    background-color: #0056b3; /* Azul mais escuro */
-    transform: scale(1.1); /* Efeito de hover */
+    background-color: #0056b3; 
+    transform: scale(1.1); 
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Contêiner de Alunos */
+
 #alunos {
     margin: 20px auto;
     max-width: 800px;
     padding: 20px;
     border-radius: 10px;
-    background: linear-gradient(90deg, #e6e6e6, #f9f9f9); /* Gradiente leve */
+    background: linear-gradient(90deg, #e6e6e6, #f9f9f9);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Tabela de Alunos */
+
 #tabela-alunos {
     width: 100%;
     margin-top: 20px;
@@ -80,18 +79,18 @@ header {
 }
 
 #tabela-alunos th {
-    background-color: #003366; /* Azul escuro */
-    color: #fff; /* Texto branco */
+    background-color: #003366; 
+    color: #fff;
 }
 
-/* Estilo Geral dos Botões */
+
 button, .nav-button, .action-button, label[for="importar-planilha"] {
     display: inline-block;
     padding: 12px 20px;
     font-size: 1rem;
     font-weight: 500;
-    color: white; /* Texto branco */
-    background-color: #003366; /* Fundo azul escuro */
+    color: white; 
+    background-color: #003366;
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -102,22 +101,22 @@ button, .nav-button, .action-button, label[for="importar-planilha"] {
 }
 
 button:hover, .nav-button:hover, .action-button:hover, label[for="importar-planilha"]:hover {
-    background-color: #0055aa; /* Azul mais claro no hover */
+    background-color: #0055aa;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05); /* Destaque no hover */
+    transform: scale(1.05);
 }
 
-/* Rodapé Fixo */
+
 footer {
-    position: fixed; /* Fixa o rodapé na parte inferior */
+    position: fixed; 
     bottom: 0;
     left: 0;
-    width: 100%; /* O rodapé ocupa toda a largura */
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto semitransparente */
-    color: #ffffff; /* Texto branco */
-    text-align: center; /* Centraliza o conteúdo do rodapé */
-    padding: 15px 0; /* Espaçamento interno */
-    font-size: 1rem; /* Tamanho da fonte */
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); /* Sombra para realçar */
-    z-index: 1000; /* Mantém acima de outros elementos */
+    width: 100%; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: #ffffff;
+    text-align: center; 
+    padding: 15px 0; 
+    font-size: 1rem; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); 
+    z-index: 1000;
 }
