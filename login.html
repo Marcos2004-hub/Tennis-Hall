@@ -5,16 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Login</title>
-    <!-- Importando o CSS externo -->
     <link rel="stylesheet" href="css/styles5.css">
 </head>
 <body>
-    <!-- Cabeçalho com a logo -->
     <header>
         <img src="logo/logo.png" alt="Logo" class="logo">
     </header>
-
-    <!-- Container de Login -->
     <div class="container active" id="login-container">
         <h2>Entrar</h2>
         <input type="text" placeholder="Email ou telefone" id="username">
@@ -22,8 +18,6 @@
         <button onclick="login()">Entrar</button>
         <a href="#" onclick="showForgotPassword()">Esqueceu a senha?</a>
     </div>
-
-    <!-- Container de Redefinição de Senha -->
     <div class="container" id="forgot-password-container">
         <h2>Redefinir Senha</h2>
         <input type="text" placeholder="Confirme seu email" id="reset-username">
@@ -31,13 +25,9 @@
         <button onclick="resetPassword()">Redefinir Senha</button>
         <a href="#" onclick="backToLogin()">Voltar ao login</a>
     </div>
-
-    <!-- Rodapé -->
     <footer>
         <p>© 2025 Tennis Hall. Todos os direitos reservados.</p>
     </footer>
-
-    <!-- Importando o JavaScript externo -->
     <script src="js/script5.js"></script>
 </body>
 </html>
