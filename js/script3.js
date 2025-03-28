@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
         camposPlanilha.forEach(campo => {
             const celula = novaLinha.insertCell();
             const chave = campo.toLowerCase().replace(/ /g, "_");
-            celula.textContent = aluno[chave] || ""; // Preenche com valor ou string vazia
+            celula.textContent = aluno[chave] || ""; 
         });
 
         const acoesCelula = novaLinha.insertCell();
@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (sheet[cell]) {
                 sheet[cell].s = {
                     font: { bold: true, color: { rgb: "FFFFFF" } },
-                    fill: { fgColor: { rgb: "0000FF" } }, // Fundo azul
+                    fill: { fgColor: { rgb: "0000FF" } },
                     alignment: { horizontal: "center", vertical: "center" }
                 };
             }
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function ajustarTamanhosAutomaticamente(sheet) {
-        const colWidths = camposPlanilha.map(() => ({ wch: 20 })); // Largura inicial de 20
+        const colWidths = camposPlanilha.map(() => ({ wch: 20 })); 
         const range = XLSX.utils.decode_range(sheet["!ref"]);
         for (let R = range.s.r + 1; R <= range.e.r; R++) {
             for (let C = range.s.c; C <= range.e.c; C++) {
@@ -113,11 +113,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 const cell = sheet[cellAddress];
                 if (cell && cell.v) {
                     const cellLength = String(cell.v).length;
-                    colWidths[C] = { wch: Math.max(colWidths[C]?.wch || 20, cellLength + 5) }; // Ajusta com base no conteúdo
+                    colWidths[C] = { wch: Math.max(colWidths[C]?.wch || 20, cellLength + 5) };
                 }
             }
         }
-        sheet["!cols"] = colWidths; // Aplica as larguras ajustadas
+        sheet["!cols"] = colWidths;
     }
 
     function importarPlanilha(file) {
