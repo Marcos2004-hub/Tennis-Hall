@@ -1,80 +1,80 @@
-/* Estilização Geral */
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(270deg, #1e90ff, #00bfff, #87cefa); /* Gradiente animado */
+    background: linear-gradient(270deg, #1e90ff, #00bfff, #87cefa); 
     background-size: 600% 600%;
     animation: gradientAnimation 10s ease infinite;
-    color: #333; /* Cor do texto padrão */
-    overflow: hidden; /* Evita scroll para animação do fundo */
+    color: #333; 
+    overflow: hidden;
 }
 
-/* Animação do Fundo */
+
 @keyframes gradientAnimation {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
 
-/* Estilo do Cabeçalho */
+
 header {
     position: relative;
     background-color: transparent;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Espaço entre logo e botão */
+    justify-content: space-between; 
     padding: 10px 20px;
-    z-index: 10; /* Mantém acima do fundo */
+    z-index: 10; 
 }
 
-/* Logo */
+
 .logo {
-    height: 80px; /* Aumenta a altura da logo */
+    height: 80px; 
     object-fit: contain;
 }
 
-/* Botão Voltar */
+
 .redirect-button {
-    padding: 12px 25px; /* Maior espaçamento interno */
-    background-color: #007bff; /* Azul vibrante */
+    padding: 12px 25px; 
+    background-color: #007bff;
     color: white;
-    font-size: 18px; /* Fonte maior */
+    font-size: 18px; 
     font-weight: bold;
     border: none;
-    border-radius: 5px; /* Bordas arredondadas */
+    border-radius: 5px;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
 }
 
 .redirect-button:hover {
-    background-color: #0056b3; /* Azul escuro no hover */
-    transform: scale(1.1); /* Aumento ao passar o mouse */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+    background-color: #0056b3;
+    transform: scale(1.1); 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); 
 }
 
-/* Estilo do Conteúdo Principal */
+
 main {
     flex: 1;
     padding: 20px;
-    color: #ffffff; /* Texto claro para contraste */
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); /* Melhora a visibilidade */
+    color: #ffffff; 
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); 
 }
 
-/* Rodapé */
+
 footer {
-    position: fixed; /* Fixa o rodapé na parte inferior */
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto semitransparente */
-    color: #ffffff; /* Texto branco */
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: #ffffff; 
     text-align: center;
-    padding: 15px 0; /* Espaçamento interno */
-    font-size: 1rem; /* Tamanho da fonte */
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
-    z-index: 1000; /* Garante que o rodapé fique visível */
+    padding: 15px 0; 
+    font-size: 1rem;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); 
+    z-index: 1000; 
 }
