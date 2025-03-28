@@ -15,21 +15,21 @@ document.addEventListener("DOMContentLoaded", function () {
     adjustLayout();
     window.addEventListener("resize", adjustLayout);
 
-    // Corrigir redirecionamento para "finanças"
+   
     const botaoFinancas = document.querySelector(".nav-button[href='#finanças']");
     if (botaoFinancas) {
         botaoFinancas.addEventListener("click", function (event) {
-            event.preventDefault(); // Evita o comportamento padrão do link
-            window.location.href = "finanças.html"; // Redireciona para a página finanças.html
+            event.preventDefault(); 
+            window.location.href = "finanças.html"; 
         });
     }
 
-    // Manter o redirecionamento para "alunos"
+    
     const botaoAlunos = document.querySelector(".nav-button[href='alunos.html']");
     if (botaoAlunos) {
         botaoAlunos.addEventListener("click", function (event) {
-            event.preventDefault(); // Evita o comportamento padrão do link
-            window.location.href = "alunos.html"; // Redireciona para o novo HTML
+            event.preventDefault(); 
+            window.location.href = "alunos.html"; 
         });
     }
 });
